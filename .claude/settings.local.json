@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdftotext /scratch/user/fatemehdoudi_tamu.edu/fst/fst_paper.pdf /tmp/fst_paper.txt)",
+      "Read(//tmp/**)",
+      "Bash(python3 -c \"import PyPDF2; r = PyPDF2.PdfReader\\('/scratch/user/fatemehdoudi_tamu.edu/fst/fst_paper.pdf'\\); print\\(len\\(r.pages\\), 'pages'\\)\")",
+      "Bash(python3 -c \"import pdfminer; print\\('pdfminer ok'\\)\")",
+      "Bash(pip list *)",
+      "Bash(pip install *)",
+      "Bash(python3 *)",
+      "Bash(module load *)",
+      "Bash(conda run *)",
+      "Read(//scratch/**)",
+      "Bash(xargs -I{} sh -c '{} -c \"import torch; print\\(\\\\\"{}\\\\\", torch.__version__\\)\" 2>/dev/null')",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/envs/skillopt/bin/python3.11 *)",
+      "Bash(pytest tests/test_advantages.py -v)",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import torch; print\\(torch.__version__\\)\")",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import gepa; print\\('gepa ok'\\)\")",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import sys; print\\(sys.path\\)\")",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c ' *)",
+      "Bash(PYTHONPATH=\"/scratch/user/fatemehdoudi_tamu.edu/fst:/home/fatemehdoudi_tamu.edu/.local/lib/python3.12/site-packages\" /scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 *)",
+      "Bash(PYTHONPATH=/scratch/user/fatemehdoudi_tamu.edu/fst:/home/fatemehdoudi_tamu.edu/.local/lib/python3.12/site-packages /scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -)",
+      "Bash(2>&1)",
+      "Bash(conda --version)",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/envs/skillopt/bin/python --version)",
+      "Read(//sw/**)",
+      "Bash(/sw/eb/sw/Miniforge3/25.3.0-3/bin/mamba --version)",
+      "Bash(/sw/eb/sw/Miniforge3/25.3.0-3/bin/conda --version)",
+      "Bash(nvidia-smi)",
+      "Bash(nvcc --version)",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import torch; print\\('CUDA:', torch.version.cuda\\); print\\('torch:', torch.__version__\\)\")",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import gepa; print\\(gepa.__version__\\)\")",
+      "Bash(pip show *)",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import vllm; print\\(vllm.__version__\\)\")",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import litellm; print\\(litellm.__version__\\)\")",
+      "Bash(/scratch/user/fatemehdoudi_tamu.edu/archive/gepa-venv/bin/python3 -c \"import transformers; print\\('transformers:', transformers.__version__\\)\")",
+      "Bash(pip index *)",
+      "Bash(curl -s https://pypi.org/pypi/gepa/json)",
+      "Bash(/sw/eb/sw/Miniforge3/25.3.0-3/bin/mamba create *)",
+      "Bash(squeue -j 256582 --format=\"%.10i %.10u %.8T %.10M %.6D %R\")"
+    ]
+  }
+}

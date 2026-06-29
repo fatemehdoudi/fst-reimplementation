@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Logs
+logs/
+*.log
+
+# Training outputs
+runs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# PDFs
+*.pdf
+
+# Optional (recommended)
+*.egg-info/
